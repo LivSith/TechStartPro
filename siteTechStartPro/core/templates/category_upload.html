@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Importe aquivo CSV</title>
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <div>
+<!--                | means OR operator-->
+                <strong>{{message|safe}}</strong>
+            </div>
+        {% endfor %}
+    {% else %}
+    <h2>Importe Arquivo CSV!</h2>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="file1"> Importe um arquivo CSV </label>
+        <input type="file" id="file1" name="file">
+        <small>Só aceitamos arquivos CSV</small>
+        <button type="submit">Importar</button>
+    </form>
+    {% endif %}
+
+    <h4>Categorias importadas:</h4>
+    {% for category in categories %}
+        {{category.name}} - {{category.id}}<br>
+    {% endfor %}
+</body>
+</html>

@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 import siteTechStartPro.core.views
 
 urlpatterns = [
+    path('upload-csv/', siteTechStartPro.core.views.category_upload , name="category_upload"),
     path('', siteTechStartPro.core.views.home),
     path('admin/', admin.site.urls),
 ]
