@@ -18,10 +18,13 @@ class Product(models.Model):
     name = models.CharField(max_length=255, blank=False, null=False)
     description = models.TextField(blank=False, null=False)
     price = models.DecimalField(max_digits=8, decimal_places=2, blank=False, null=False)
-    categories = models.ManyToManyField(Category)
+    categories = models.ManyToManyField(Category, related_name='categories')
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('product_edit', kwargs={'pk': self.pk})
 
     class Meta:
         verbose_name = "Produto"
