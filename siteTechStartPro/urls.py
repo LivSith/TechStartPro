@@ -14,12 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
-import siteTechStartPro.core.views
+from siteTechStartPro.core import views
+
 
 urlpatterns = [
-    path('upload-csv/', siteTechStartPro.core.views.category_upload , name="category_upload"),
-    path('', siteTechStartPro.core.views.home),
     path('admin/', admin.site.urls),
+    path('', views.home, name="home"),
+    path('upload-csv/', views.category_upload, name="category_upload"),
+    path('produtos/', include('siteTechStartPro.core.urls'))
 ]

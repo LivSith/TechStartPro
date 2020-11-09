@@ -1,0 +1,5 @@
+<h1>Detalhe do Produto</h1>
+<h3>Nome : {{ product.name }}</h3>
+<h3>ID : {{ product.id }}</h3>
+<h3>Descrição : {{ product.description }}</h3>
+<h3>Categorias : {% for item in product.categories.all %}{{ item.name }}<br>{% endfor %}</h3>

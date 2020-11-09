@@ -1,0 +1,33 @@
+<h1>Editar Produto</h1>
+<form method="POST">{% csrf_token %}
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>:</td>
+            <td>{{ form.name }}</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>:</td>
+            <td>{{ product.id }}</td>
+        </tr>
+        <tr>
+            <td>Valor</td>
+            <td>:</td>
+            <td>{{ form.price }}</td>
+        </tr>
+        <tr>
+            <td>Descrição</td>
+            <td>:</td>
+            <td>{{ form.description }}</td>
+        </tr>
+        <tr>
+            <td>Categorias</td>
+            <td>:</td>
+            <td>{{ form.categories }}</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Save"></td>
+        </tr>
+    </table>
+</form>
