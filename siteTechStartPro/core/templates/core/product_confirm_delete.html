@@ -1,4 +1,13 @@
-<form method="post">{% csrf_token %}
-    Vc tem certeza que deseja excluir: "{{ object }}" ?
-    <input type="submit" value="Submit" />
-</form>
+{% extends "base.html" %}
+
+{% block title %} Delete Produto {% endblock title %}
+
+{% block content %}
+    <div class="col-md-12">
+     <h4>Deletar Produto?</h4>
+        <form method="post">{% csrf_token %}
+            <h3>Vc tem certeza que deseja excluir: "{{ object }}" ?</h3>
+            <input type="submit" value="Submit"  class="btn btn-primary"/>
+        </form>
+    </div>
+{% endblock content %} 

@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Welcome to TechStartPro</h1>
-    <nav>
-         <a href="{% url 'category_upload' %}"><i class="material-icons">Importar CSV</i></a><br>
-         <a href="{% url 'product_list' %}"><i class="material-icons">teste</i></a>
-    </nav>
-</body>
+{% extends "base.html" %}
+
+{% block title %}TechStartPro{% endblock title %}
+
+{% block content %}
+    <div class="col-md-12">
+
+        <h1>Welcome to TechStartPro</h1>
+        <br>
+        <h3>Aplicativo para armazenar dados de produtos e categorias.</h3>
+        <br>
+        <h5>1. CATEGORIAS</h5>
+        <p>Clique no botão "Categorias" e verifique as categorias existentes e como criar novas.</p>
+
+        <span><a href="{% url 'category_upload' %}" class="btn btn-primary">Categorias</a></span>
+
+        <h5>2. PRODUTOS </h5>
+        <p>Clique no botão "PRODUTOS", para criar novos produtos, verificar os exixtentes, editar ou deletar alguns!</p>
+
+        <span><a href="{% url 'product_list' %}" class="btn btn-primary">Produtos</a></span>
+    </div> 
+{% endblock content %} 
