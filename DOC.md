@@ -20,23 +20,31 @@ ESte projeto usa Python 3.5.0
 >```
 
 4. criar um arquivo, chamado '.env' na pasta do projeto com os dados:
-
-'SECRET_KEY==0sl#i1kf(*e53d7oo9i3-))u^jd3!f!bg2zfem&-@kp39mzl(
-DEBUG=True'
+>```
+> SECRET_KEY==0sl#i1kf(*e53d7oo9i3-))u^jd3!f!bg2zfem&-@kp39mzl(
+> DEBUG=True
+>```
 
 5. Instalar os requisitos do ambiente;
 >```
 >$ pip install -r requirements.txt
 >```
 
-6. Servidor local;
+6. Banco de dados;
 >```
->python manage.py runserver
+>$ python manage.py migrate
 >```
 
-7. Abrir o navegador e acessar 'http://127.0.0.1:8000/'
+7. Servidor local;
+>```
+>$ python manage.py runserver
+>```
 
-8. E começar a usar \0/
+8. Abrir o navegador e acessar o servidor local.
+
+ 'http://127.0.0.1:8000/'
+
+9. E começar a usar \0/
 
 
 # Testes
