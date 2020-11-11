@@ -1,0 +1,1 @@
+web: gunicorn siteTechStartPro.wsgi --log-file -

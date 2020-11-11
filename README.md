@@ -1,3 +1,10 @@
+# O #ProjetoTaOn
+Acesse a aplicação na web ;) 
+
+
+# Como rodar este projeto?
+Vá até o arquivo "DOC.md" e sigas o passo a passo, no tópico "Instruções de instalação (configuração)".
+
 
 # Trabalho no olist
 Olist é uma empresa que oferece uma plataforma de integração para vendedores e marketplaces, permitindo-lhes vender seus produtos em vários canais.
