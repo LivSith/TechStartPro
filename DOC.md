@@ -14,19 +14,29 @@ ESte projeto usa Python 3.5.0
 > $ source projectvenv/bin/activate
 >```
 
-3. Instalar os requisitos do ambiente;
+3. Ir para a pasta correta;
+>```
+>$ cd TechStartPro/
+>```
+
+4. criar um arquivo, chamado '.env' na pasta do projeto com os dados:
+
+'SECRET_KEY==0sl#i1kf(*e53d7oo9i3-))u^jd3!f!bg2zfem&-@kp39mzl(
+DEBUG=True'
+
+5. Instalar os requisitos do ambiente;
 >```
 >$ pip install -r requirements.txt
 >```
 
-4. Servidor local;
+6. Servidor local;
 >```
 >python manage.py runserver
 >```
 
-5. Abrir o navegador e acessar 'http://127.0.0.1:8000/'
+7. Abrir o navegador e acessar 'http://127.0.0.1:8000/'
 
-6. E começar a usar \0/
+8. E começar a usar \0/
 
 
 # Testes
