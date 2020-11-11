@@ -1,6 +1,8 @@
 # O #ProjetoTaOn
 Acesse a aplicação na web ;) 
 
+https://projetotaon-techstartpro.herokuapp.com/
+
 
 # Como rodar este projeto?
 Vá até o arquivo "DOC.md" e sigas o passo a passo, no tópico "Instruções de instalação (configuração)".
